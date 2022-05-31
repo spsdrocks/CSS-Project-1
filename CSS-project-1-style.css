@@ -1,0 +1,229 @@
+h1 {
+	display: block;
+	font-size: 2em;
+	margin-top: 0.67em;
+	margin-bottom: 0.67em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+
+h2 {
+	display: block;
+	font-size: 30px;
+	margin-top: 0.83em;
+	margin-bottom: 0.83em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+
+h3 {
+	display: block;
+	font-size: 1.17em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+
+h4 {
+	display: block;
+	font-size: 1em;
+	margin-top: 1.33em;
+	margin-bottom: 1.33em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+
+h5 {
+	display: block;
+	font-size: .83em;
+	margin-top: 1.67em;
+	margin-bottom: 1.67em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+
+h6 {
+	display: block;
+	font-size: .67em;
+	margin-top: 2.33em;
+	margin-bottom: 2.33em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+}
+
+.collapsible {
+	background-color: #777;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 96%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+.active, .collapsible:hover {
+	animation: fading 0.4s;
+	background-color: #555;
+}
+
+@keyframes fading {
+	0% {
+		background-color: #777;
+	}
+	100% {
+		background-color: #555;
+	}
+}
+
+.content {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+.quarterdent {
+	margin-left: 170px !important;
+}
+
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0);
+	width: auto;
+	height: 99.5%;
+}
+
+.centered:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+	animation: image 0.5s;
+}
+
+@keyframes image {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.centered-2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0);
+	width: auto;
+	height: 99.5%;
+	transition: background-color 0.5s;
+}
+
+.centered-2:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#child {
+	display: inline-block;
+	width: 45%;
+	height: auto;
+}
+
+#div-1 {
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+#div-2 {
+	margin-right: 60px;
+	margin-left: 60px;
+}
+
+#img-1 {
+	height: 400px;
+}
+
+#flexbox {
+	display: flex;
+}
+
+[id="div-1"] h3 {
+	line-height: 35px;
+}
+
+[class="centered"] h4 {
+	margin-top: 25%;
+	color: rgba(255, 255, 255, 0);
+}
+
+.centered:hover h4 {
+	margin-top: 25%;
+	color: rgba(255, 255, 255, 1);
+	animation: image-text 0.5;
+}
+
+@keyframes image-text {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+[class="centered"] a, [class="centered-2"] a {
+	margin-top: 50%;
+	color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+	transition: color 0.5s
+}
+
+[class="centered"]:hover a, [class="centered-2"]:hover a {
+	margin-top: 50%;
+	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+}
+
+.centered a:hover, .centered-2 a:hover {
+	animation: image-link 0.6s;
+	color: rgba(3, 255, 141, 1);
+}
+
+@keyframes image-link {
+	0% {
+		color: rgba(255, 255, 255, 1);
+	}
+	100% {
+		color: rgba(3, 255, 141, 1);
+	}
+	
+}
+
+[type="submit"] {
+	transform: translate(400%, 0%);
+}
